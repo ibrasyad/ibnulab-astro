@@ -10,15 +10,15 @@ import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getSortedPosts } from "@utils/content-utils";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
+import bcryptjs from "bcryptjs";
+import CryptoJS from "crypto-js";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 import { licenseConfig } from "src/config";
 import ImageWrapper from "../../components/misc/ImageWrapper.astro";
 import PostMetadata from "../../components/PostMeta.astro";
 import { profileConfig, siteConfig } from "../../config";
 import { formatDateToYYYYMMDD } from "../../utils/date-utils";
-import CryptoJS from "crypto-js";
-import bcryptjs from "bcryptjs";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
 	return blogEntries.map((entry) => ({
@@ -52,7 +52,6 @@ if (isEncrypted) {
 	const saltRounds = 10;
 	passwordHash = bcryptjs.hashSync(entry.data.password, saltRounds);
 }
-
 
 dayjs.extend(utc);
 const lastModified = dayjs(entry.data.updated || entry.data.published)
@@ -263,22 +262,22 @@ const jsonLd = {
                         let runtimeString = prefix + ' ';
                         
                         if (years > 0) {
-                            runtimeString += `${years}${yearKey}`;
+                            runtimeString += `${years}${yearKey} `;
                         }
                         if (months > 0) {
-                            runtimeString += `${months}${monthKey}`;
+                            runtimeString += `${months}${monthKey} `;
                         }
                         if (remainingDays > 0) {
-                            runtimeString += `${remainingDays}${dayKey}`;
+                            runtimeString += `${remainingDays}${dayKey} `;
                         }
-                        runtimeString += `${hours}${hourKey}`;
+                        runtimeString += `${hours}${hourKey} `;
                         if (minutes < 10) {
-                            runtimeString += `0${minutes}${minuteKey}`;
+                            runtimeString += `0${minutes}${minuteKey} `;
                         } else {
-                            runtimeString += `${minutes}${minuteKey}`;
+                            runtimeString += `${minutes}${minuteKey} `;
                         }
                         if (secs < 10) {
-                            runtimeString += `0${secs}${secondKey}`;
+                            runtimeString += `0${secs}${secondKey} `;
                         } else {
                             runtimeString += `${secs}${secondKey}`;
                         }

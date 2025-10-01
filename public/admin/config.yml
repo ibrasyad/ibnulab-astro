@@ -1,0 +1,64 @@
+site_url: "https://ibnulab-astro.ibnulab.workers.dev"
+display_url: "https://ibnulab-astro.ibnulab.workers.dev"
+publish_mode: editorial_workflow
+show_preview_links: true
+
+backend:
+  name: github
+  repo: "ibrasyad/ibnulab-astro"
+  branch: master
+  base_url: "https://decap-proxy.ibnulab.workers.dev"
+  auth_endpoint: "auth"
+  open_authoring: false
+
+media_folder: "public/assets/images"   # stored in repo
+public_folder: "/assets/images"        # used in frontmatter
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Published", name: "published", widget: "datetime" }
+      - { label: "Updated", name: "updated", widget: "datetime", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Description", name: "description", widget: "text", required: false, default: "" }
+      - { label: "Image", name: "image", widget: "image", required: false, default: "" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        default: []
+      - { label: "Category", name: "category", widget: "string", required: false, default: "" }
+      - { label: "Language", name: "lang", widget: "string", required: false, default: "" }
+      - { label: "Pinned", name: "pinned", widget: "boolean", required: false, default: false }
+      - { label: "Author", name: "author", widget: "string", required: false, default: "M. Ibnu Rasyad" }
+      - { label: "Source Link", name: "sourceLink", widget: "string", required: false, default: "" }
+      - { label: "License Name", name: "licenseName", widget: "string", required: false, default: "CC BY 4.0" }
+      - { label: "License URL", name: "licenseUrl", widget: "string", required: false, default: "https://creativecommons.org/licenses/by/4.0/" }
+
+      - { label: "Encrypted", name: "encrypted", widget: "boolean", required: false, default: false }
+      - label: "Password"
+        name: "password"
+        widget: "string"
+        required: false
+        default: ""
+        hint: "Only used when Encrypted is true"
+        
+      - { label: "Body", name: "body", widget: "markdown" }
+
+# collections:
+#   - name: "posts" # Used in routes, e.g., /admin/collections/blog
+#     label: "Posts" # Used in the UI
+#     folder: "src/content/posts" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collection
+#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+#     fields: # The fields for each document, usually in frontmatter
+#       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+#       - { label: "Title", name: "title", widget: "string" }
+#       - { label: "Publish Date", name: "date", widget: "datetime" }
+#       - { label: "Featured Image", name: "thumbnail", widget: "image" }
+#       - { label: "Body", name: "body", widget: "markdown" }
