@@ -188,50 +188,44 @@ export default defineConfig({
 	},
 	experimental: {
 		csp: {
-			directives: {
-				"default-src": ["'self'"],
-
-				// Scripts
-				"script-src": [
-					"'self'",
-					"https://static.cloudflareinsights.com", // Cloudflare Web Analytics
-					"https://unpkg.com", // SveltiaCMS bundle
+			directives: [
+				["default-src", ["'self'"]],
+				[
+					"script-src",
+					[
+						"'self'",
+						"https://static.cloudflareinsights.com",
+						"https://unpkg.com",
+					],
 				],
-
-				// Styles
-				"style-src": [
-					"'self'",
-					"https://fonts.googleapis.com",
-					"https://unpkg.com", // SveltiaCMS sometimes injects styles
+				[
+					"style-src",
+					["'self'", "https://fonts.googleapis.com", "https://unpkg.com"],
 				],
-
-				// Images
-				"img-src": [
-					"'self'",
-					"data:",
-					"https://images.unsplash.com",
-					"https://avatars.githubusercontent.com", // common in GitHub-based CMS
+				[
+					"img-src",
+					[
+						"'self'",
+						"data:",
+						"https://images.unsplash.com",
+						"https://avatars.githubusercontent.com",
+					],
 				],
-
-				// Fonts
-				"font-src": ["'self'", "https://fonts.gstatic.com"],
-
-				// API / XHR / Fetch
-				"connect-src": [
-					"'self'",
-					"https://api.cloudflare.com", // Cloudflare analytics
-					"https://api.github.com", // GitHub API (Decap/Sveltia)
-					"https://decap-proxy.ibnulab.workers.dev", // your Decap CMS proxy
-					"https://unpkg.com", // SveltiaCMS dynamic loads
+				["font-src", ["'self'", "https://fonts.gstatic.com"]],
+				[
+					"connect-src",
+					[
+						"'self'",
+						"https://api.cloudflare.com",
+						"https://api.github.com",
+						"https://decap-proxy.ibnulab.workers.dev",
+						"https://unpkg.com",
+					],
 				],
-
-				// CMS admin loads its own iframe/preview
-				"frame-src": ["'self'", "https://unpkg.com"],
-
-				// Security hardening
-				"frame-ancestors": ["'self'"],
-				"object-src": ["'none'"],
-			},
+				["frame-src", ["'self'", "https://unpkg.com"]],
+				["frame-ancestors", ["'self'"]],
+				["object-src", ["'none'"]],
+			],
 		},
 	},
 });
