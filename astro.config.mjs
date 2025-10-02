@@ -15,7 +15,6 @@ import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
-import { expressiveCodeConfig } from "./src/config.ts";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
@@ -53,7 +52,7 @@ export default defineConfig({
 			animateHistoryBrowsing: false,
 			skipPopStateHandling: (event) => {
 				// 跳过锚点链接的处理，让浏览器原生处理
-				return event.state && event.state.url && event.state.url.includes("#");
+				return event.state?.url?.includes("#");
 			},
 		}),
 		icon({
@@ -184,6 +183,54 @@ export default defineConfig({
 					}
 					warn(warning);
 				},
+			},
+		},
+	},
+	experimental: {
+		csp: {
+			directives: {
+				"default-src": ["'self'"],
+
+				// Scripts
+				"script-src": [
+					"'self'",
+					"https://static.cloudflareinsights.com", // Cloudflare Web Analytics
+					"https://unpkg.com", // SveltiaCMS bundle
+				],
+
+				// Styles
+				"style-src": [
+					"'self'",
+					"https://fonts.googleapis.com",
+					"https://unpkg.com", // SveltiaCMS sometimes injects styles
+				],
+
+				// Images
+				"img-src": [
+					"'self'",
+					"data:",
+					"https://images.unsplash.com",
+					"https://avatars.githubusercontent.com", // common in GitHub-based CMS
+				],
+
+				// Fonts
+				"font-src": ["'self'", "https://fonts.gstatic.com"],
+
+				// API / XHR / Fetch
+				"connect-src": [
+					"'self'",
+					"https://api.cloudflare.com", // Cloudflare analytics
+					"https://api.github.com", // GitHub API (Decap/Sveltia)
+					"https://decap-proxy.ibnulab.workers.dev", // your Decap CMS proxy
+					"https://unpkg.com", // SveltiaCMS dynamic loads
+				],
+
+				// CMS admin loads its own iframe/preview
+				"frame-src": ["'self'", "https://unpkg.com"],
+
+				// Security hardening
+				"frame-ancestors": ["'self'"],
+				"object-src": ["'none'"],
 			},
 		},
 	},
