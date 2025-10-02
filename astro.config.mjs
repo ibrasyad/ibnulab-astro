@@ -188,34 +188,36 @@ export default defineConfig({
 	},
 	csp: {
 		directives: {
-			"default-src": ["'self'"],
-			"script-src": [
-				"'self'",
-				"https://static.cloudflareinsights.com",
-				"https://unpkg.com",
-			],
-			"style-src": [
-				"'self'",
-				"https://fonts.googleapis.com",
-				"https://unpkg.com",
-			],
-			"img-src": [
-				"'self'",
-				"data:",
-				"https://images.unsplash.com",
-				"https://avatars.githubusercontent.com",
-			],
-			"font-src": ["'self'", "https://fonts.gstatic.com"],
-			"connect-src": [
-				"'self'",
-				"https://api.cloudflare.com",
-				"https://api.github.com",
-				"https://decap-proxy.ibnulab.workers.dev",
-				"https://unpkg.com",
-			],
-			"frame-src": ["'self'", "https://unpkg.com"],
-			"frame-ancestors": ["'self'"],
-			"object-src": ["'none'"],
+		"default-src": ["'self'"],
+		"script-src": [
+			"'self'",
+			"https://static.cloudflareinsights.com",
+			"https://unpkg.com",
+			"'nonce-{{nonce}}'", // let Astro inject the runtime nonce
+		],
+		"style-src": [
+			"'self'",
+			"https://fonts.googleapis.com",
+			"https://unpkg.com",
+		],
+		"img-src": [
+			"'self'",
+			"data:",
+			"https://images.unsplash.com",
+			"https://avatars.githubusercontent.com",
+		],
+		"font-src": ["'self'", "https://fonts.gstatic.com"],
+		"connect-src": [
+			"'self'",
+			"https://api.cloudflare.com",
+			"https://api.github.com",
+			"https://decap-proxy.ibnulab.workers.dev",
+			"https://unpkg.com",
+		],
+		"frame-src": ["'self'", "https://unpkg.com"],
+		"frame-ancestors": ["'self'"],
+		"object-src": ["'none'"],
 		},
+		reportOnly: false,
 	},
 });
