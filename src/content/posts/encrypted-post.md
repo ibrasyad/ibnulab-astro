@@ -8,6 +8,7 @@ password: "123456"
 tags: ["Test", "Encryption"]
 category: "Technology"
 series: "Mizuki"
+draft: true
 ---
 
 
