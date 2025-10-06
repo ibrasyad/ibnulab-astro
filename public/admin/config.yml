@@ -22,8 +22,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Published", name: "published", widget: "date" }
-      - { label: "Updated", name: "updated", widget: "date", required: false , default: null}
+      - { label: "Published", name: "published", widget: "datetime" }
+      - { label: "Updated", name: "updated", widget: "datetime", required: false , default: null}
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Description", name: "description", widget: "text", required: false, default: "" }
       - { label: "Image", name: "image", widget: "image", required: false, default: "" }
