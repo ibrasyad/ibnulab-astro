@@ -29,7 +29,7 @@ collections:
       - { label: "Image", name: "image", widget: "image", required: false, default: "" }
       - label: "Tags"
         name: "tags"
-        widget: "tags"
+        widget: "list"
         required: false
       - { label: "Category", name: "category", widget: "string", required: false, default: "" }
       - { label: "Language", name: "lang", widget: "string", required: false, default: "" }
