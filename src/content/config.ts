@@ -3,8 +3,8 @@ import { defineCollection, z } from "astro:content";
 const postsCollection = defineCollection({
 	schema: z.object({
 		title: z.string(),
-		published: z.coerce.date(), // ✅ accepts both "2025-10-06" and "2025-10-06T09:35:00Z"
-    	updated: z.coerce.date().optional().nullable(),
+		published: z.union([z.coerce.date(), z.string().length(0), z.null()]),
+    	updated: z.union([z.coerce.date(), z.string().length(0), z.null()]).optional(),
 		draft: z.boolean().optional().default(false),
 		description: z.string().optional().default(""),
 		image: z.string().optional().default(""),
