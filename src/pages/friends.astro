@@ -6,10 +6,10 @@ import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-const friendsPost = await getEntry("spec", "friends");
+const friendsPost = await getEntry("spec", "built-with");
 
 if (!friendsPost) {
-	throw new Error("friends page content not found");
+	throw new Error("Tech stack page content not found");
 }
 
 const { Content } = await render(friendsPost);
@@ -23,8 +23,7 @@ const items = [
 	},
 	{
 		title: "Mizuki Docs",
-		imgurl:
-			"http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
+		imgurl: "https://docs.mizuki.mysqil.com/youxi.png",
 		desc: "Mizuki User Documentation - The template I'm using for this site.",
 		siteurl: "https://docs.mizuki.mysqil.com",
 		tags: ["Docs"],
