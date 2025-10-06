@@ -1,12 +1,15 @@
 ---
 title: MelonEats - Recipe Finder
-published: 2024-12-23T09:00:00
+published: 2024-12-23
 updated: ''
 draft: false
 description: Fun little project to learn API while also learning Streamlit to help me find recipe with the ingredients in my fridge
 image: /assets/images/cover meloneats.png
 tags:
-  - Project, Python, API, Streamlit
+  - Project
+  - Python
+  - API
+  - Streamlit
 category: Project
 lang: ''
 pinned: false

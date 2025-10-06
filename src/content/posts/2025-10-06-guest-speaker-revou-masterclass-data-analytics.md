@@ -1,12 +1,14 @@
 ---
 title: Guest Speaker - RevoU Masterclass Data Analytics
-published: 2025-06-17T09:00:00
+published: 2025-06-17
 updated: ''
 draft: false
 description: A fun and engaging session with students and aspiring analysts.
 image: /assets/images/cover masterclass.png
 tags:
-  - Speaker, SQL, Sharing
+  - Speaker
+  - SQL
+  - Sharing
 category: Speaker
 lang: ''
 pinned: false

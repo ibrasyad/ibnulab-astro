@@ -1,12 +1,17 @@
 ---
 title: Customer Growth through Profiling
-published: 2024-11-17T09:00:00
+published: 2024-11-17
 updated: ''
 draft: false
 description: This is a clustering analysis focusing on understanding our customer. It was using a public dataset from BigQuery as a learning project.
 image: /assets/images/cover profiling.jpg
 tags:
-  - Project, Python, Analysis, Customer Segmentation, K-Means, Ecommerce
+  - Project
+  - Python
+  - Analysis
+  - Customer Segmentation
+  - K-Means
+  - Ecommerce
 category: Project
 lang: ''
 pinned: false

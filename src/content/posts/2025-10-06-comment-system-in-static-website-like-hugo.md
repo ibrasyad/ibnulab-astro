@@ -1,12 +1,16 @@
 ---
 title: Comment System in Static Website Like Hugo
-published: 2025-07-04T09:00:00
-updated: 2025-10-06T10:38:00
+published: 2025-07-04
+updated: 2025-10-06
 draft: false
 description: My effort of adding comment section into my static website. It was a long and confusing journey, but thankfully with Cloudflare D1 database it can be done.
 image: /assets/images/cover comment.png
 tags:
-  - Project, Comment, Cloudflare, D1, Hugo
+  - Project
+  - Comment
+  - Cloudflare
+  - D1
+  - Hugo
 category: Project
 lang: ''
 pinned: false

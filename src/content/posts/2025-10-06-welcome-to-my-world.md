@@ -1,12 +1,15 @@
 ---
 title: Welcome to my world!
-published: 2024-12-05T09:00:00
-updated: 2025-10-06T10:20:00
+published: 2024-12-05
+updated: 2025-10-06
 draft: false
 description: What is this place? What can you find here? And why is nasi uduk the best food for breakfast?
 image: /assets/images/cover.jpg
 tags:
-  - Portfolio, Website, Hugo, Astro
+  - Portfolio
+  - Website
+  - Hugo
+  - Astro
 category: Blog
 lang: ''
 pinned: true
