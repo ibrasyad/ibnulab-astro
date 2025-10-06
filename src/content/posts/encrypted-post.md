@@ -6,12 +6,9 @@ encrypted: true
 pinned: true
 password: "123456"
 tags: ["Test", "Encryption"]
-category: "Technology"
-series: "Mizuki"
+category: "Technology
 draft: true
 ---
-
-
 
 This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
 
@@ -26,11 +23,10 @@ image: ./cover.jpg
 tags: [Foo, Bar]
 category: Front-end
 draft: false
-series: "Mizuki"
 ---
 ```
 
-![]()
+
 
 
 
@@ -61,3 +57,4 @@ src/content/posts/
     ├── cover.png
     └── index.md
 ```
+

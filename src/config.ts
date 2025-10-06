@@ -13,7 +13,7 @@ import type {
 	SiteConfig,
 } from "./types/config";
 import { LinkPreset } from "./types/config";
-import { getTranslateLanguageFromConfig } from "./utils/language-utils";
+
 
 // 移除i18n导入以避免循环依赖
 
@@ -31,15 +31,7 @@ export const siteConfig: SiteConfig = {
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
-	translate: {
-		enable: true, // 启用翻译功能
-		service: "client.edge", // 使用 Edge 浏览器翻译服务
-		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // 根据站点语言自动设置默认翻译语言
-		showSelectTag: false, // 不显示默认语言选择下拉菜单，使用自定义按钮
-		autoDiscriminate: true, // 自动检测用户语言
-		ignoreClasses: ["ignore", "banner-title", "banner-subtitle"], // 翻译时忽略的 CSS 类名
-		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
-	},
+	
 	bangumi: {
 		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
 	},
@@ -388,25 +380,6 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			},
 		},
 		{
-			// 组件类型：系列组件
-			type: "series",
-			// 是否启用该组件
-			enable: true,
-			// 组件显示顺序
-			order: 4,
-			// 组件位置："sticky" 表示粘性定位
-			position: "sticky",
-			// CSS 类名
-			class: "onload-animation",
-			// 动画延迟时间
-			animationDelay: 200,
-			// 响应式配置
-			responsive: {
-				// 折叠阈值：当系列数量超过10个时自动折叠
-				collapseThreshold: 10,
-			},
-		},
-		{
 			// 组件类型：标签组件
 			type: "tags",
 			// 是否启用该组件
@@ -485,7 +458,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 启用看板娘
+	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
