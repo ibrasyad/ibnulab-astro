@@ -6,8 +6,7 @@ description: 'Read more about Markdown features in Mizuki'
 image: ''
 tags: [Demo, Example, Markdown, mizuki]
 category: 'Examples'
-draft: true 
-series: "Mizuki"
+draft: true
 ---
 
 ## GitHub Repository Cards

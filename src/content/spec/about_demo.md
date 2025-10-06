@@ -21,8 +21,6 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 - **Reading Time Estimation** - Know how long articles take to read
 - **Post Categorization** - Organize content with tags and categories
 
-
-
 ### 📱 Special Pages
 - **Anime Tracking Page** - Track your anime watching progress with ratings
 - **Friends Links Page** - Showcase friend websites with beautiful cards
