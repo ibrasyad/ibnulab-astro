@@ -1,7 +1,7 @@
 ---
 title: Passenger Satisfaction Analysis
 published: 2024-11-15
-updated: ''
+updated: 
 draft: false
 description: This was a learning project when I was starting my study as a Data Analyst in 2022.
 image: /assets/images/cover passenger.jpg
