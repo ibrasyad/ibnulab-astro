@@ -40,6 +40,7 @@ enum I18nKey {
 	publishedAt = "publishedAt",
 	license = "license",
 	friends = "friends",
+	builtWith = "builtWith",
 	anime = "anime",
 	diary = "diary",
 

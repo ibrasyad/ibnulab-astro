@@ -20,6 +20,7 @@ export const en: Translation = {
 
 	[Key.comments]: "Comments",
 	[Key.friends]: "Friends",
+	[Key.builtWith]: "Built With",
 	[Key.untitled]: "Untitled",
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",
