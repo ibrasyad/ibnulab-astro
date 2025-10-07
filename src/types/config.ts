@@ -32,8 +32,6 @@ export type SiteConfig = {
 		};
 	};
 
-
-
 	// 添加bangumi配置
 	bangumi?: {
 		userId?: string; // Bangumi用户ID
@@ -101,7 +99,7 @@ export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
 	About = 2,
-	Friends = 3,
+	builtWith = 3,
 	Anime = 4,
 	Diary = 5,
 
@@ -151,9 +149,7 @@ type TwikooConfig = {
 	lang?: string;
 };
 
-export type LIGHT_DARK_MODE =
-	| typeof LIGHT_MODE
-	| typeof DARK_MODE;
+export type LIGHT_DARK_MODE = typeof LIGHT_MODE | typeof DARK_MODE;
 
 export type BlogPostData = {
 	body: string;
