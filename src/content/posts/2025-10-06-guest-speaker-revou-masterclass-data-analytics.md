@@ -1,7 +1,7 @@
 ---
 title: Guest Speaker - RevoU Masterclass Data Analytics
 published: 2025-06-17
-updated: 
+updated: ""
 draft: false
 description: A fun and engaging session with students and aspiring analysts.
 image: /assets/images/cover masterclass.png
@@ -10,14 +10,14 @@ tags:
   - SQL
   - Sharing
 category: Speaker
-lang: ''
+lang: ""
 pinned: false
 author: M. Ibnu Rasyad
-sourceLink: ''
+sourceLink: ""
 licenseName: CC BY 4.0
 licenseUrl: https://creativecommons.org/licenses/by/4.0/
 encrypted: false
-password: ''
+password: ""
 ---
 One month ago, I had the privilege of being invited as a guest speaker for an event focused on SQL and data analytics. It was an incredible opportunity to connect with students and aspiring analysts—especially meaningful because I once sat in their place, trying to figure out what “real” data work looked like outside the classroom.
 
