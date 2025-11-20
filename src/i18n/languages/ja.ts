@@ -38,7 +38,7 @@ export const ja: Translation = {
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "タグなし",
 
-	[Key.builtWith]: "Tech Stack",
+	[Key.builtWith]: "Built With",
 	[Key.builtWithSubtitle]: "Discover more excellent websites",
 	[Key.builtWithSearchPlaceholder]: "Search tech stack name or description...",
 	[Key.builtWithFilterAll]: "All",

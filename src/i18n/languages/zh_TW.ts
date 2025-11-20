@@ -38,7 +38,7 @@ export const zh_TW: Translation = {
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "無標籤",
 
-	[Key.builtWith]: "Tech Stack",
+	[Key.builtWith]: "Built With",
 	[Key.builtWithSubtitle]: "Discover more excellent websites",
 	[Key.builtWithSearchPlaceholder]: "Search tech stack name or description...",
 	[Key.builtWithFilterAll]: "All",

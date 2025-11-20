@@ -16,7 +16,7 @@ if (!siteConfig.featurePages.friends) {
 const friendsPost = await getEntry("spec", "friends");
 
 if (!friendsPost) {
-	throw new Error("Tech stack page content not found");
+	throw new Error("Friends page content not found");
 }
 
 const { Content } = await render(friendsPost);

@@ -38,7 +38,7 @@ export const en: Translation = {
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",
 
-	[Key.builtWith]: "Tech Stack",
+	[Key.builtWith]: "Built With",
 	[Key.builtWithSubtitle]: "Discover more excellent websites",
 	[Key.builtWithSearchPlaceholder]: "Search tech stack name or description...",
 	[Key.builtWithFilterAll]: "All",
