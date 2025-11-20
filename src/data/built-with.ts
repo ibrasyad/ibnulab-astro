@@ -29,14 +29,15 @@ export const techsData: builtWith[] = [
 		siteurl: "https://docs.mizuki.mysqil.com",
 		tags: ["Docs"],
 	},
-	// {
-	// 	id: 3,
-	// 	title: "Vercel",
-	// 	imgurl: "https://avatars.githubusercontent.com/u/14985020?v=4&s=640",
-	// 	desc: "Develop. Preview. Ship.",
-	// 	siteurl: "https://vercel.com",
-	// 	tags: ["Hosting", "Cloud"],
-	// },
+	{
+		id: 3,
+		title: "Cloudflare Workers",
+		imgurl:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW7cAlhYN23JXGKy9Uji4Ae2mnHOR9eXX9g&s",
+		desc: "Cloudflare workers to build my static site",
+		siteurl: "https://workers.cloudflare.com/",
+		tags: ["Hosting", "Cloud"],
+	},
 	{
 		id: 4,
 		title: "Tailwind CSS",

@@ -38,6 +38,16 @@ export const ja: Translation = {
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "タグなし",
 
+	[Key.builtWith]: "Tech Stack",
+	[Key.builtWithSubtitle]: "Discover more excellent websites",
+	[Key.builtWithSearchPlaceholder]: "Search tech stack name or description...",
+	[Key.builtWithFilterAll]: "All",
+	[Key.builtWithNoResults]: "No matching tech found",
+	[Key.builtWithVisit]: "Visit",
+	[Key.builtWithCopyLink]: "Copy Link",
+	[Key.builtWithCopySuccess]: "Copied",
+	[Key.builtWithTags]: "Tags",
+
 	[Key.wordCount]: "語",
 	[Key.wordsCount]: "語",
 	[Key.minuteCount]: "分",

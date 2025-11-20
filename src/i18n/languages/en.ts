@@ -38,6 +38,16 @@ export const en: Translation = {
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",
 
+	[Key.builtWith]: "Tech Stack",
+	[Key.builtWithSubtitle]: "Discover more excellent websites",
+	[Key.builtWithSearchPlaceholder]: "Search tech stack name or description...",
+	[Key.builtWithFilterAll]: "All",
+	[Key.builtWithNoResults]: "No matching tech found",
+	[Key.builtWithVisit]: "Visit",
+	[Key.builtWithCopyLink]: "Copy Link",
+	[Key.builtWithCopySuccess]: "Copied",
+	[Key.builtWithTags]: "Tags",
+
 	[Key.wordCount]: "word",
 	[Key.wordsCount]: "words",
 	[Key.minuteCount]: "minute",
