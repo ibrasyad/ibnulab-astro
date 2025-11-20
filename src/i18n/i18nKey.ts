@@ -54,6 +54,17 @@ enum I18nKey {
 	friendsCopyLink = "friendsCopyLink",
 	friendsCopySuccess = "friendsCopySuccess",
 	friendsTags = "friendsTags",
+
+	builtWith = "builtWith",
+	builtWithSubtitle = "builtWithSubtitle",
+	builtWithSearchPlaceholder = "builtWithSearchPlaceholder",
+	builtWithFilterAll = "builtWithFilterAll",
+	builtWithNoResults = "builtWithNoResults",
+	builtWithVisit = "builtWithVisit",
+	builtWithCopyLink = "builtWithCopyLink",
+	builtWithCopySuccess = "builtWithCopySuccess",
+	builtWithTags = "builtWithTags",
+
 	anime = "anime",
 	diary = "diary",
 	gallery = "gallery",

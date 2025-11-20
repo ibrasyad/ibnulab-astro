@@ -38,12 +38,13 @@ export const siteConfig: SiteConfig = {
 	featurePages: {
 		anime: false, // 番剧页面开关
 		diary: false, // 日记页面开关
-		friends: true, // 友链页面开关
+		friends: false, // 友链页面开关
 		projects: false, // 项目页面开关
 		skills: false, // 技能页面开关
 		timeline: false, // 时间线页面开关
 		albums: false, // 相册页面开关
 		devices: false, // 设备页面开关
+		builtWith: true, // 设备页面开关
 	},
 
 	// 顶栏标题配置
@@ -51,7 +52,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "Ibnulab",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.png",
+		icon: "assets/home/avatar.webp",
 	},
 
 	bangumi: {
@@ -313,23 +314,6 @@ export const navBarConfig: NavBarConfig = {
 				},
 			],
 		},
-		// {
-		// 	name: "Others",
-		// 	url: "#",
-		// 	icon: "material-symbols:more-horiz",
-		// 	children: [
-		// 		{
-		// 			name: "About",
-		// 			url: "/about/",
-		// 			icon: "material-symbols:person",
-		// 		},
-		// 		{
-		// 			name: "Built With",
-		// 			url: "/built-with/",
-		// 			icon: "material-symbols:group",
-		// 		},
-		// 	],
-		// },
 	],
 };
 
