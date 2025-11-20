@@ -20,11 +20,6 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 	},
 	[LinkPreset.Friends]: {
 		name: i18n(I18nKey.friends),
-		url: "/friends/",
-		icon: "material-symbols:group",
-	},
-	[LinkPreset.builtWith]: {
-		name: i18n(I18nKey.builtWith),
 		url: "/built-with/",
 		icon: "material-symbols:group",
 	},
