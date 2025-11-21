@@ -1,6 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
-import { siteConfig, sidebarLayoutConfig } from "../config";
+import { sidebarLayoutConfig, siteConfig } from "../config";
 
 export let currentLayout: "list" | "grid" = "list";
 
@@ -143,7 +143,7 @@ onMount(() => {
     class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90 flex items-center justify-center theme-switch-btn {isSwitching ? 'switching' : ''}" 
     on:click={switchLayout}
     disabled={isSwitching}
-    title={currentLayout === 'list' ? '切换到网格模式' : '切换到列表模式'}
+    title={currentLayout === 'list' ? 'Switch to grid mode' : 'Switch to list mode'}
   >
       {#if currentLayout === 'list'}
         <!-- 列表图标 -->
