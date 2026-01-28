@@ -1,7 +1,7 @@
 ---
 title: Gold Price Tracker (Galeri 24 Data Scrapping)
 published: 2026-01-28T08:00:00.000+07:00
-draft: true
+draft: false
 description: A project which mainly to help gain insight in gold prices for
   personal investment. Data is scrapped from Galeri 24, which I understand is
   not the exact price, but should be enough as an overall picture.
