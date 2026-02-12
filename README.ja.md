@@ -1,11 +1,23 @@
-# 🌸 Mizuki  
-![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-![Astro](https://img.shields.io/badge/Astro-5.12.8-orange)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🌸 Mizuki <img align='right' src='logo.png' width='200px' alt="Mizuki logo">
 
-![Mizuki Preview](../README.webp)
+[Astro](https://astro.build)をベースにした、先進的な機能と美しいデザインを備えた現代的な静的ブログテンプレートです。
+
+[![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen)](https://nodejs.org/)
+[![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)](https://pnpm.io/)
+[![Astro](https://img.shields.io/badge/Astro-5.15.3-orange)](https://astro.build/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)](https://www.typescriptlang.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache)](https://opensource.org/licenses/Apache-2.0)
+
+[**🖥️ ライブデモ**](https://mizuki.mysqil.com/) | [**📝 ドキュメント**](https://docs.mizuki.mysqil.com/)
+
+🌏 README 言語
+[**English**](./README.md) / [**中文**](./README.zh.md) / [**日本語**](./README.ja.md) / [**中文繁体**](./README.tw.md) /
+
+包括的なドキュメントで素早く始めましょう。テーマのカスタマイズ、機能の設定、本番環境へのデプロイなど、ブログを正常に立ち上げるために必要なすべての情報が網羅されています。
+
+[📚 完全なドキュメントを読む](https://docs.mizuki.mysqil.com/) →
+
+![Mizuki Preview](./README.webp)
 
 <table>
   <tr>
@@ -20,52 +32,18 @@
   <tr>
 </table>
 
-[Astro](https://astro.build)をベースにした、先進的な機能と美しいデザインを備えた現代的な静的ブログテンプレートです。
+## 🚀 NEW: 自動解像度適応
 
-[**🖥️ ライブデモ**](https://mizuki.mysqil.com/)
-[**📝 ドキュメント**](https://docs.mizuki.mysqil.com/)
+> **🎯 自動解像度アルゴリズム** - デバイス画面の解像度に基づいてコンテンツレイアウトをインテリジェントに適応させ、すべてのデバイスで最適な視聴体験を提供
 
 🌏 README 言語
-[**English**](../README.md) /
-[**中文**](../README.zh.md) /
+[**English**](./README.md) /
+[**中文**](./README.zh.md) /
 [**日本語**](./README.ja.md) /
 [**中文繁体**](./README.tw.md) /
 
 
-## 🆕 v6.5 アップデート
-- **コードブロック折りたたみ機能**: コードブロックの折りたたみをサポートし、コードの読書体験を改善しました。
-- **リポジトリ分離**: コードリポジトリとコンテンツリポジトリの分離モードをサポートし、コンテンツの更新をより便利にしました。
-- **新しいフロントエンドレイアウト管理**: 全く新しいフロントエンドレイアウト管理システムを実装し、より良いコントロールを提供します。
-- **ウェブサイトURL設定**: config.tsにウェブサイトURL設定を追加し、管理を容易にしました。
-- **レイアウト切り替え機能**: フロントエンドレイアウト切り替え機能を追加し、より柔軟な表示オプションを提供します。
-- **パフォーマンスとバグ修正**: ウェブサイトのパフォーマンスを最適化し、様々なバグを修正し、ユーザーエクスペリエンスを向上させました。
 
-## 🆕 v6.0 アップデート
-- **ページリファクタリング**: アニメ、タイムライン、プロジェクト、スキル、アルバム、フレンドリンク、日記、アバウトページを完全にリファクタリングし、パフォーマンスとユーザーエクスペリエンスを向上させました。
-- **ページ切り替え機能**: ページ切り替え機能とSEO最適化モジュールを追加し、機能ページの表示/非表示を制御できるようになりました。
-- **新しいグリッドレイアウト**: 新しいグリッド記事リストレイアウトを導入し、コンテンツ表示効果を改善しました。
-- **リップル管理**: リップル効果管理モジュールを追加し、視覚的なインタラクション効果を強化しました。
-
-## 🆕 v5.0 アップデート
-- **Pio Live2D統合**: Pio Live2Dキャラクターを統合し、可愛らしいインタラクティブな仲間を提供してユーザーエンゲージメントを向上させます。
-- **高度な設定**: モデルパス、位置、サイズ、会話内容など、`src/config.ts`で詳細な設定をサポートし、パーソナライズされたニーズに対応します。
-- **シームレスなナビゲーション**: 「ホームに戻る」機能は、テーマに組み込まれたSwupを使用して、スムーズでリフレッシュなしのページ遷移を提供します。
-
-## 🆕 v4.3 アップデート
-- **アニメページ：** より可愛くて魅力的なアニメページにリデザインし、アニメリスト、詳細、タイムラインを含みます。
-- **アルバムページ：** ページネーション+フォルダデータインデックス方式を使用してアルバムページを再構築しました。
-
-## 🆕 v3.4 アップデート
-- **新しいページ：** プロジェクト紹介、スキル紹介、タイムラインページを追加し、あなたの作品、専門スキル、成長の旅を表示できるようになりました。
-- **ドロップダウンメニュー修正：** ドロップダウンメニューをクリックした際に表示される境界線の問題を解決し、インターフェースの一貫性を向上させました。
-- **検索機能の最適化：** 検索機能のパフォーマンスと精度を向上させました。
-- **フッターHTMLインジェクション：** ページの下部にカスタムHTMLコンテンツを挿入できる新機能を導入し、より大きな柔軟性を提供します。
-
-## 🆕 v3.3 アップデート
-- **Mermaid構文サポート：** Mermaidチャート構文のサポートを追加し、フローチャート、シーケンス図、ガントチャートなどをMarkdown内に直接埋め込むことができるようになりました。
-- **Umamiアナリティクス：** Umamiアナリティクスのサポートを追加し、ウェブサイトの訪問データ分析を簡単に統合できるようになりました。
-
-![設定](../configuration.svg)
 
 ### 🔧 コンポーネント設定システムの再構築
 - **統一された設定アーキテクチャ：** 動的コンポーネント管理と順序設定をサポートする全く新しいモジュラーコンポーネント設定システム
@@ -74,8 +52,12 @@
 - **レスポンシブレイアウト適応：** コンポーネントがレスポンシブレイアウトをサポートし、デバイスタイプに基づいて表示を自動調整
 
 ### 📐 レイアウトシステムの最適化
+- **動的サイドバー位置調整：** 左右サイドバーの切り替えをサポートし、レイアウトを自動適応
+- **インテリジェントな記事目次配置：** サイドバーが右側にある場合、記事ナビゲーションが自動的に左側に移動し、より良い読書体験を提供
+- **グリッドレイアウトの改善：** CSS Gridレイアウトを最適化し、コンテナ幅の異常問題を解決
+
 ### 🎛️ 設定ファイル形式の標準化
- - **Umami API キー（任意）：** Umami アナリティクスを使用する場合は、デプロイ先プラットフォームに環境変数 `UMAMI_API_KEY` を設定するか、プロジェクトの設定ファイルに直接キーを記載することを推奨します。
+- **標準化された設定形式：** 統一されたコンポーネント設定ファイル形式仕様を作成
 - **型安全性：** 設定の型安全性を確保する包括的なTypeScript型定義
 - **拡張性：** カスタムコンポーネントタイプと設定オプションのサポート
 
@@ -243,7 +225,7 @@ Mizukiは標準のGitHub Flavored Markdownを超える拡張機能をサポー�
 | `pnpm build`               | 本番サイトを`./dist/`にビルド              |
 | `pnpm preview`             | デプロイ前にビルドをローカルでプレビュー     |
 | `pnpm check`               | Astroエラーチェックを実行                  |
-| `pnpm format`              | Biomeでコードをフォーマット                |
+| `pnpm format`              | Prettierでコードをフォーマット                |
 | `pnpm lint`                | コードの問題をチェックして修正              |
 | `pnpm new-post <ファイル名>` | 新しいブログ投稿を作成                     |
 | `pnpm astro ...`           | Astro CLIコマンドを実行                   |
@@ -281,6 +263,45 @@ export const siteConfig: SiteConfig = {
 - **日記ページ：** `src/pages/diary.astro`で瞬間を編集
 - **アバウトページ：** `src/content/spec/about.md`でコンテンツを編集
 
+### 📦 コードとコンテンツの分離（オプション）
+
+Mizukiは、コードとコンテンツを2つの独立したリポジトリに分けて管理することをサポートしており、チーム协作や大規模プロジェクトに適しています。
+
+**簡単選択**:
+
+| 使用シナリオ | 設定方法 | 対象者 |
+|---------|---------|---------|
+| 🆕 **ローカルモード**（デフォルト） | 設定不要、そのまま使用 | 初心者、個人ブログ |
+| 🔧 **分離モード** | `ENABLE_CONTENT_SYNC=true`を設定 | チーム协作、プライベートコンテンツ |
+
+**ワンクリック有効化/無効化**:
+
+```bash
+# 方法 1: ローカルモード（初心者向け）
+# .envファイルを作成せず、そのまま実行
+pnpm dev
+
+# 方法 2: コンテンツ分離モード
+# 1. 設定ファイルをコピー
+cp .env.example .env
+
+# 2. .envを編集してコンテンツ分離を有効化
+ENABLE_CONTENT_SYNC=true
+CONTENT_REPO_URL=https://github.com/your-username/Mizuki-Content.git
+
+# 3. コンテンツを同期
+pnpm run sync-content
+```
+
+**機能**:
+- ✅ パブリックおよびプライベートリポジトリをサポート 🔐
+- ✅ ワンクリックで有効化/無効化、コード修正不要
+- ✅ 自動同期、開発前に最新コンテンツを自動プル
+
+📖 **詳細設定**: [コンテンツ分離完全ガイド](docs/CONTENT_SEPARATION.md)
+🔄 **移行チュートリアル**: [シングルリポジトリから分離モードへ移行](docs/MIGRATION_GUIDE.md)
+📚 **その他のドキュメント**: [ドキュメントインデックス](docs/README.md)
+
 ## ✏️ 貢献
 
 貢献は歓迎します！お気軽に問題やプルリクエストを提出してください。
@@ -293,19 +314,39 @@ export const siteConfig: SiteConfig = {
 
 ## 📄 ライセンス
 
-このプロジェクトはMITライセンスの下でライセンスされています - 詳細は[LICENSE](../LICENSE)ファイルをご覧ください。
+このプロジェクトはApacheライセンス2.0の下でライセンスされています - 詳細は[LICENSE](./LICENSE)ファイルをご覧ください。
+
+### 元のプロジェクトライセンス
+
+このプロジェクトは[Fuwari](https://github.com/saicaca/fuwari)に基づいて開発され、元のプロジェクトはMITライセンスを使用しています。MITライセンスの要件に従い、元の著作権表示と許可通知はLICENSE.MITファイルに含まれています。
 
 ## 🙏 謝辞
 
 - オリジナルの[Fuwari](https://github.com/saicaca/fuwari)テンプレートをベースにしています
-- [Astro](https://astro.build)と[Tailwind CSS](https://tailwindcss.com)で構築
 - [Yukina](https://github.com/WhitePaper233/yukina) - 美しくエレガントなブログテンプレートにインスパイアされました
+- 一部のデザインは [Firefly](https://github.com/CuteLeaf/Firefly) と [Twilight](https://github.com/spr-aachen/Twilight) テンプレートからインスピレーションを得ています
+- [Pio](https://github.com/Dreamer-Paul/Pio)を使用してかわいいLive2D看板娘プラグインを実装
+- [Astro](https://astro.build)と[Tailwind CSS](https://tailwindcss.com)で構築
 - アイコンは[Iconify](https://iconify.design/)から
 
-### 特別な感謝
+### 🌸 特別な感謝
 
+- **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - このプロジェクトのベースとなるオリジナルテンプレート。このような美しく機能的なテンプレートを作成していただきありがとうございます。
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - このプロジェクトの形成に役立ったデザインのインスピレーションと創造性を提供してくれたことに感謝します。Yukinaは優れたデザイン原則とユーザーエクスペリエンスを示す、エレガントなブログテンプレートです。
+- **[Firefly](https://github.com/CuteLeaf/Firefly)** - 優れたレイアウトデザインのアイデアを提供していただきありがとうございます。デュアルサイドバーレイアウト、記事の2カラムグリッドレイアウト、およびいくつかのウィジェットのデザインと実装により、Mizukiのインターフェースがより豊かになりました。
+- **[Twilight](https://github.com/spr-aachen/Twilight)** - インスピレーションと技術的なサポートを提供していただきありがとうございます。Twilight の動的壁紙モード切り替えシステム、レスポンシブデザイン、およびトランジション効果は、Mizuki のユーザーエクスペリエンスを大幅に向上させました。
 
+## 🍀 コントリビューター
+
+このプロジェクトに貢献してくださったすべてのコントリビューターに感謝します。質問や提案がある場合は、[Issue](https://github.com/matsuzaka-yuki/Mizuki/issues)または[Pull Request](https://github.com/matsuzaka-yuki/Mizuki/pulls)を提出してください。
+
+<a href="https://github.com/matsuzaka-yuki/Mizuki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
+</a>
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=matsuzaka-yuki/Mizuki&type=Date)](https://star-history.com/#matsuzaka-yuki/Mizuki&Date)
 ---
 
 ⭐ このプロジェクトが役立つと思ったら、スターを付けることを検討してください！

@@ -1,71 +1,49 @@
-# 🌸 Mizuki  
-![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-![Astro](https://img.shields.io/badge/Astro-5.12.8-orange)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-![Mizuki Preview](../README.webp)
-
-<table>
-  <tr>
-    <td><img alt="" src="image/1.webp"></td>
-    <td><img alt="" src="image/2.webp"></td>
-    <td><img alt="" src="image/3.webp"></td>
-  <tr>
-  <tr>
-    <td><img alt="" src="image/4.webp"></td>
-    <td><img alt="" src="image/5.webp"></td>
-    <td><img alt="" src="image/6.webp"></td>
-  <tr>
-</table>
+# 🌸 Mizuki <img align='right' src='logo.png' width='200px' alt="Mizuki logo">
 
 一個現代化、功能豐富的靜態部落格模板，基於 [Astro](https://astro.build) 構建，具有先進的功能和精美的設計。
 
-[**🖥️ 線上演示**](https://mizuki.mysqil.com/)
-[**📝 使用者文檔**](https://docs.mizuki.mysqil.com/)
+[![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen)](https://nodejs.org/)
+[![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)](https://pnpm.io/)
+[![Astro](https://img.shields.io/badge/Astro-5.15.3-orange)](https://astro.build/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)](https://www.typescriptlang.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache)](https://opensource.org/licenses/Apache-2.0)
+
+[**🖥️ 線上演示**](https://mizuki.mysqil.com/) | [**📝 使用者文檔**](https://docs.mizuki.mysqil.com/)
 
 🌏 README 語言
-[**English**](../README.md) /
-[**中文**](../README.zh.md) /
+[**English**](./README.md) / [**中文**](./README.zh.md) / [**日本語**](./README.ja.md) / [**中文繁体**](./README.tw.md) /
+
+透過我們的綜合文檔快速開始。無論是自訂主題、配置功能，還是部署到生產環境，文檔涵蓋了您成功啟動部落格所需的所有內容。
+
+[📚 閱讀完整文檔](https://docs.mizuki.mysqil.com/) →
+
+![Mizuki Preview](./README.webp)
+
+<table>
+  <tr>
+    <td><img alt="" src="docs/image/1.webp"></td>
+    <td><img alt="" src="docs/image/2.webp"></td>
+    <td><img alt="" src="docs/image/3.webp"></td>
+  <tr>
+  <tr>
+    <td><img alt="" src="docs/image/4.webp"></td>
+    <td><img alt="" src="docs/image/5.webp"></td>
+    <td><img alt="" src="docs/image/6.webp"></td>
+  <tr>
+</table>
+
+## 🚀 NEW: 自動解析度適配
+
+> **🎯 自動解析度演算法** - 智能適配內容佈局基於裝置螢幕解析度，為所有裝置提供最佳觀看體驗
+
+🌏 README 語言
+[**English**](./README.md) /
+[**中文**](./README.zh.md) /
 [**日本語**](./README.ja.md) /
 [**中文繁体**](./README.tw.md) /
 
 
-## 🆕 v6.5 版本更新
-- **程式碼區塊折疊功能**：程式碼區塊支援折疊，改善程式碼閱讀體驗。
-- **程式碼倉庫與內容倉庫分離**：支援程式碼倉庫和內容倉庫的分離模式，更方便更新內容。
-- **全新的前端佈局管理**：實現了全新的前端佈局管理系統，提供更好的控制。
-- **網站地址設定**：網站地址設定加入到config.ts，便於管理。
-- **前端佈局切換功能**：添加前端佈局切換功能，提供更靈活的顯示選項。
-- **效能優化和Bug修復**：優化網站效能並修復各種Bug，提升使用者體驗。
 
-## 🆕 v6.0 版本更新
-- **頁面重構**：完全重構了番劇、時間線、項目、技能、相冊、友情連結、日記、關於頁面，提升性能和用戶體驗。
-- **頁面開關功能**：添加了頁面開關功能和SEO優化模組，可以控制特色頁面的顯示與隱藏。
-- **新的網格佈局**：添加了新的網格文章列表佈局，改善內容展示效果。
-- **水波紋管理**：添加了水波紋管理模組，增強視覺交互效果。
-
-## 🆕 v5.0 版本更新
-- **Pio 看板娘整合**：整合了 Pio 看板娘，提供可愛的互動角色，增強使用者互動體驗。
-- **高度可配置**：支援在 `src/config.ts` 中進行詳細配置，包括模型路徑、位置、尺寸、對話內容等，滿足個性化需求。
-- **無刷新跳轉**：看板娘的返回首頁功能現在使用主題自帶的 Swup 無刷新跳轉，提供更流暢、無縫的頁面切換體驗。
-
-## 🆕 v4.3 版本更新
-- **番劇頁面：** 重構了更可愛好看的番劇頁面，包括番劇列表、番劇詳情和番劇時間軸。
-- **相冊頁面：** 重構了相冊頁面，使用分頁+資料夾數據索引方案。
-
-## 🆕 v3.4 版本更新
-- **新增頁面：** 添加了項目展示、技能展示和時間線專屬頁面，用於展示您的工作、專業技能和成長歷程。
-- **下拉選單修復：** 解決了下拉選單點擊時出現邊框輪廓的問題，提升了界面一致性。
-- **搜尋功能優化：** 增強了搜尋功能的效能和準確性。
-- **底部HTML注入：** 引入了新功能，允許在頁面底部注入自定義HTML內容，提供更大的靈活性。
-
-## 🆕 v3.3 版本更新
-- **Mermaid 語法支援：** 添加了對 Mermaid 圖表語法的支援，現在可以在 Markdown 中直接嵌入流程圖、序列圖、甘特圖等。
-- **Umami 訪問統計：** 添加了對 Umami 訪問統計的支援，可以輕鬆整合網站訪問數據分析。
-
-![Configuration](../configuration.svg)
 
 ### 🔧 元件配置系統重構
 - **統一配置架構：** 全新的模組化元件配置體系，支援動態元件管理和順序配置
@@ -249,7 +227,7 @@ Mizuki 支援超越標準 GitHub Flavored Markdown 的增強功能：
 | `pnpm build`               | 構建生產網站到 `./dist/`               |
 | `pnpm preview`             | 在部署前本地預覽構建                   |
 | `pnpm check`               | 運行 Astro 錯誤檢查                    |
-| `pnpm format`              | 使用 Biome 格式化程式碼                |
+| `pnpm format`              | 使用 Prettier 格式化程式碼                |
 | `pnpm lint`                | 檢查並修復程式碼問題                   |
 | `pnpm new-post <檔案名>`   | 創建新部落格文章                       |
 | `pnpm astro ...`           | 運行 Astro CLI 命令                    |
@@ -287,6 +265,45 @@ export const siteConfig: SiteConfig = {
 - **日記頁面：** 在 `src/pages/diary.astro` 中編輯動態
 - **關於頁面：** 在 `src/content/spec/about.md` 中編輯內容
 
+### 📦 代碼內容分離 (可選)
+
+Mizuki 支援將代碼和內容分成兩個獨立的倉庫管理，適合團隊協作和大型專案。
+
+**快速選擇**:
+
+| 使用場景 | 配置方式 | 適合人群 |
+|---------|---------|---------|
+| 🆕 **本地模式** (預設) | 不配置，直接使用 | 新手、個人部落格 |
+| 🔧 **分離模式** | 設置 `ENABLE_CONTENT_SYNC=true` | 團隊協作、私有內容 |
+
+**一鍵啟用/禁用**:
+
+```bash
+# 方式 1: 本地模式 (推薦新手)
+# 不創建 .env 文件，直接運行
+pnpm dev
+
+# 方式 2: 內容分離模式
+# 1. 複製配置文件
+cp .env.example .env
+
+# 2. 編輯 .env，啟用內容分離
+ENABLE_CONTENT_SYNC=true
+CONTENT_REPO_URL=https://github.com/your-username/Mizuki-Content.git
+
+# 3. 同步內容
+pnpm run sync-content
+```
+
+**功能特性**:
+- ✅ 支援公開和私有倉庫 🔐
+- ✅ 一鍵啟用/禁用，無需修改代碼
+- ✅ 自動同步，開發前自動拉取最新內容
+
+📖 **詳細配置**: [內容分離完整指南](docs/CONTENT_SEPARATION.md)
+🔄 **遷移教程**: [從單倉庫遷移到分離模式](docs/MIGRATION_GUIDE.md)
+📚 **更多文檔**: [文檔索引](docs/README.md)
+
 ## ✏️ 貢獻
 
 我們歡迎貢獻！請隨時提交問題和拉取請求。
@@ -299,19 +316,38 @@ export const siteConfig: SiteConfig = {
 
 ## 📄 許可證
 
-本專案基於 MIT 許可證 - 查看 [LICENSE](../LICENSE) 檔案了解詳情。
+本專案基於 Apache 許可證 2.0 - 查看 [LICENSE](./LICENSE) 檔案了解詳情。
+
+### 原始專案許可證
+
+本專案基於 [Fuwari](https://github.com/saicaca/fuwari) 開發，該專案使用 MIT 許可證。根據 MIT 許可證要求，原始版權聲明和許可聲明已包含在 LICENSE.MIT 檔案中。
 
 ## 🙏 致謝
 
 - 基於原始 [Fuwari](https://github.com/saicaca/fuwari) 模板
-- 使用 [Astro](https://astro.build) 和 [Tailwind CSS](https://tailwindcss.com) 構建
 - 靈感來源於 [Yukina](https://github.com/WhitePaper233/yukina) - 一個美麗優雅的部落格模板
+- 部分設計靈感來源於 [Firefly](https://github.com/CuteLeaf/Firefly) 和 [Twilight](https://github.com/spr-aachen/Twilight) 模板
+- 使用 [Pio](https://github.com/Dreamer-Paul/Pio) 實現可愛的 Live2D 看板娘外掛程式
+- 使用 [Astro](https://astro.build) 和 [Tailwind CSS](https://tailwindcss.com) 構建
 - 圖標來自 [Iconify](https://iconify.design/)
 
-### 特別感謝
+### 🌸 特別感謝
 
+- **[Fuwari](https://github.com/saicaca/fuwari)** by saicaca - 本專案所基於的原始模板。感謝您創建了如此漂亮且功能強大的模板。
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - 感謝提供設計靈感和創意，幫助塑造了這個專案。Yukina 是一個優雅的部落格模板，展現了出色的設計原則和使用者體驗。
+- **[Firefly](https://github.com/CuteLeaf/Firefly)** - 感謝提供優秀的佈局設計思路，雙側邊欄佈局、文章雙列網格等佈局，及部分小元件的設計與實現，讓 Mizuki 的界面更加豐富。
+- **[Twilight](https://github.com/spr-aachen/Twilight)** - 感謝提供靈感和技術支持。Twilight 的動態桌布模式切換系統、響應式設計和過渡效果顯著提升了 Mizuki 的使用體驗。
 
----
+## 🍀 貢獻者
+
+感謝以下貢獻者對本專案做出的貢獻，如有問題或建議，請提交 [Issue](https://github.com/matsuzaka-yuki/Mizuki/issues) 或 [Pull Request](https://github.com/matsuzaka-yuki/Mizuki/pulls)。
+
+<a href="https://github.com/matsuzaka-yuki/Mizuki/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=matsuzaka-yuki/Mizuki" />
+</a>
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=matsuzaka-yuki/Mizuki&type=Date)](https://star-history.com/#matsuzaka-yuki/Mizuki&Date)
 
 ⭐ 如果您覺得這個專案有幫助，請考慮給它一個星標！
