@@ -1,13 +1,19 @@
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
-import { z } from 'astro/zod';
+import { z } from "astro/zod";
 
 const postsCollection = defineCollection({
 	loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
 	schema: z.object({
 		title: z.string(),
-		published: z.union([z.coerce.date(), z.string().length(0), z.null()]),
-    	updated: z.union([z.coerce.date(), z.string().length(0), z.null()]).optional(),
+		published: z.coerce.date(),
+		updated: z
+			.union([z.coerce.date(), z.string().length(0), z.null()])
+			.transform((val) => {
+				if (!val || val === "") return undefined;
+				return val instanceof Date ? val : new Date(val);
+			})
+			.optional(),
 		draft: z.boolean().optional().default(false),
 		description: z.string().optional().default(""),
 		image: z.string().optional().default(""),
