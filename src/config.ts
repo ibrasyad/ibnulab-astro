@@ -161,12 +161,13 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "The Prologue of my life", // 主页横幅主标题
+			title: "The prologue of my life", // 主页横幅主标题
 
 			subtitle: [
 				"Data Analyst",
 				"ETL Automation",
 				"Python, SQL, Looker Studio",
+				"Mentor",
 				// "Carousel Focus: User Experience",
 				// "Carousel Spot: Core Advantages",
 			],

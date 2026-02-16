@@ -1,12 +1,14 @@
 # About Me
 
-Hi, my name is Ibnu. I’m currently enjoying life by learning and implementing my skill as a Data Analyst. I’m always looking for ways to improve myself and help others.
+Hi, my name is Ibnu. I’m currently enjoying life by learning and implementing my skill as a Data Analyst. I’m always looking for ways to improve myself and help others. Years of experience as a data analyst and mentor for data analytics program at RevoU has been a fulfilling journey, and hopefully I can continue to grow and help others grow.
 
-I have over 2 years of experience turning numbers into meaningful stories that help businesses grow. I enjoy building dashboards, creating ETL pipelines, and simplifying complex data into insights that people can act on. I’ve also mentored aspiring analysts by designing hands-on learning programs, boosting learning outcomes by 10% with data-driven tweaks. Lately, I’ve been diving into e-commerce and marketing analytics, sharpening my skills in spotting trends and solving business problems. Whether it’s automating reports to save time or uncovering patterns in the data, I’m all about using data to make smarter decisions and drive results.
+### Data Analyst at PT Health Today Indonesia
 
-## Past Experience
+I've been working here since 2025, and I've been responsible for building dashboards, creating ETL pipelines, and simplifying complex data into insights that people can act on. It was quite challenging but interesting, as I was practically the only data analyst in the company, and nothing was "ready" to be used. I had to build everything from scratch, and it was a great experience to learn and grow.
 
-Short summary, while it's not my official title, I've been working as a data analyst for about 2 years. I was a career switcher, while it was a risky and tough choice, it was one the proudest decision I've made in my professional life.
+Notabe Achievements:
+- Dashboard and monthly report to monitor sales performance for sales team, board of director, and management team.
+- ETL pipeline to automate data integration using Python and Github Actions, reducing data integration time by 60% and enabling quick sales performance tracking and ensure up-to-date and accurate data.
 
 ### Curriculum Team for Data Analytics Program at RevoU
 
