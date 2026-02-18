@@ -457,7 +457,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：用户资料组件
 			type: "profile",
 			// 组件位置："top" 表示固定在顶部
-			position: "sticky",
+			position: "top",
 			// 所在侧边栏
 			// sidebar: "left",
 			// CSS 类名，用于应用样式和动画
