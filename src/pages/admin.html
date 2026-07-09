@@ -8,6 +8,17 @@
 		<title>Content Manager</title>
 	</head>
 	<body>
+		<div id="cms-root"></div>
 		<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+		<script>
+			console.log("Sveltia CMS script loaded");
+			window.addEventListener("load", () => {
+				console.log("Page loaded");
+				console.log(
+					"Config URL:",
+					document.querySelector('link[rel="cms-config-url"]').href,
+				);
+			});
+		</script>
 	</body>
 </html>
