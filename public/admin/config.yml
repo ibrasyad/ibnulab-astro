@@ -7,9 +7,9 @@ backend:
     name: github
     repo: "ibrasyad/ibnulab-astro"
     branch: master
-    # base_url: "https://decap-proxy.ibnulab.workers.dev"
-    # auth_endpoint: "auth"
-    # open_authoring: false
+    base_url: "https://decap-proxy.ibnulab.workers.dev"
+    auth_endpoint: "auth"
+    open_authoring: false
 
 media_folder: "public/assets/images" # stored in repo
 public_folder: "/assets/images" # used in frontmatter
