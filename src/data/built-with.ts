@@ -23,8 +23,7 @@ export const techsData: builtWith[] = [
 	{
 		id: 2,
 		title: "Mizuki Docs",
-		imgurl:
-			"http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
+		imgurl: "http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
 		desc: "Mizuki User Manual. Astro template for this website",
 		siteurl: "https://docs.mizuki.mysqil.com",
 		tags: ["Docs"],
@@ -32,8 +31,7 @@ export const techsData: builtWith[] = [
 	{
 		id: 3,
 		title: "Cloudflare Workers",
-		imgurl:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW7cAlhYN23JXGKy9Uji4Ae2mnHOR9eXX9g&s",
+		imgurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW7cAlhYN23JXGKy9Uji4Ae2mnHOR9eXX9g&s",
 		desc: "Cloudflare workers to build my static site",
 		siteurl: "https://workers.cloudflare.com/",
 		tags: ["Hosting", "Cloud"],
