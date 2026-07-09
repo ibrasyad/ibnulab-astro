@@ -98,7 +98,7 @@ const allTags = Array.from(new Set(builtWithList.flatMap((item) => item.tags)));
 				id="builtWith-grid"
 				class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-6"
 			>
-				{builtWithList.map((item) => <BuiltWithCard tech={item} />)}
+				{builtWithList.map((item) => <BuiltWithCard builtWith={item} />)}
 			</div>
 
 			<!-- 无结果提示 -->
