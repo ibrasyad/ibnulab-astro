@@ -54,7 +54,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
-		mode: "text-icon",
+		mode: "logo",
 		// 顶栏标题文本
 		text: "Ibnulab",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
@@ -203,7 +203,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: true, // 总开关，启用目录功能
+		enable: false, // 总开关，启用目录功能
 		mobileTop: true, // 手机端顶部 TOC 按钮
 		desktopSidebar: true, // 电脑端右侧边栏 TOC
 		floating: true, // 悬浮 TOC 按钮
@@ -214,11 +214,11 @@ export const siteConfig: SiteConfig = {
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		{
+		  src: '/favicon/icon.png',    // 图标文件路径
+		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
+		  sizes: '32x32',              // 可选，图标大小
+		}
 	],
 
 	// 字体配置
@@ -519,13 +519,13 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 动画延迟时间
 			animationDelay: 50,
 		},
-		{
-			// 组件类型：侧栏音乐组件
-			type: "music-sidebar",
-			position: "sticky",
-			class: "onload-animation",
-			animationDelay: 100,
-		},
+		// {
+		// 	// 组件类型：侧栏音乐组件
+		// 	type: "music-sidebar",
+		// 	position: "sticky",
+		// 	class: "onload-animation",
+		// 	animationDelay: 100,
+		// },
 		{
 			// 组件类型：分类组件
 			type: "categories",
@@ -596,12 +596,22 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 
 	// 侧栏组件布局配置
 	components: {
-		left: ["profile", "announcement", "tags", "card-toc"],
-		right: ["site-stats", "calendar", "categories", "music-sidebar"],
+		left: [
+			"profile",
+			"announcement",
+			"tags",
+			// "card-toc",
+		],
+		right: [
+			"site-stats",
+			"calendar",
+			"categories",
+			// "music-sidebar",
+		],
 		drawer: [
 			"profile",
 			"announcement",
-			"music-sidebar",
+			// "music-sidebar",
 			"categories",
 			"tags",
 		],
@@ -685,13 +695,13 @@ export const pioConfig: import("./types/config").PioConfig = {
 // 相关文章配置
 export const relatedPostsConfig: RelatedPostsConfig = {
 	enable: true,
-	maxCount: 5,
+	maxCount: 3,
 };
 
 // 随机文章配置
 export const randomPostsConfig: RandomPostsConfig = {
 	enable: true,
-	maxCount: 5,
+	maxCount: 3,
 };
 
 // 导出所有配置的统一接口
