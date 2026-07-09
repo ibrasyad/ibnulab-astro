@@ -2,7 +2,7 @@
 title: Building More Realistic Synthetic Datasets for Data Analytics Practice
 published: 2026-07-09T08:00
 updated: 2026-07-09T10:40
-draft: true
+draft: false
 description: Framework to create a realistic synthetic dataset
 image: /assets/images/pasted-image-1783568863550.png
 tags:
