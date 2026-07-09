@@ -300,7 +300,7 @@ export const navBarConfig: NavBarConfig = {
 					name: "LinkedIn",
 					url: "https://www.linkedin.com/in/ibnu-rasyad/",
 					external: true,
-					icon: "fa6-brands:linkedin-in",
+					icon: "fa7-brands:linkedin",
 				},
 				{
 					name: "GitHub",
@@ -380,7 +380,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "LinkedIn",
-			icon: "fa6-brands:linkedin-in",
+			icon: "fa7-brands:linkedin",
 			url: "https://www.linkedin.com/in/ibnu-rasyad/",
 		},
 	],
