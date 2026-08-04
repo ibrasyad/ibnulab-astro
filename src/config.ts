@@ -49,6 +49,7 @@ export const siteConfig: SiteConfig = {
 		albums: false, // 相册页面开关
 		devices: false, // 设备页面开关
 		builtWith: true, // 设备页面开关
+		dashboard: true, // Dashboard页面开关
 	},
 
 	// 顶栏标题配置
@@ -358,6 +359,11 @@ export const navBarConfig: NavBarConfig = {
 					name: "Built With",
 					url: "/built-with/",
 					icon: "material-symbols:group",
+				},
+				{
+					name: "Dashboard",
+					url: "/dashboard/",
+					icon: "material-symbols:dashboard",
 				},
 			],
 		},

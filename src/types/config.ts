@@ -68,6 +68,7 @@ export interface SiteConfig {
 		albums: boolean; // 相册页面开关
 		devices: boolean; // 设备页面开关
 		builtWith: boolean; // 设备页面开关
+		dashboard: boolean; // Dashboard页面开关
 	};
 
 	// 文章列表布局配置

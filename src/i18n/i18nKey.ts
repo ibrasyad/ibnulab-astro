@@ -351,6 +351,10 @@ enum I18nKey {
 	randomPosts = "randomPosts",
 	smartRecommend = "smartRecommend",
 	randomRecommend = "randomRecommend",
+
+	// Dashboard page
+	dashboard = "dashboard",
+	dashboardSubtitle = "dashboardSubtitle",
 }
 
 export default I18nKey;

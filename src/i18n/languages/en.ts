@@ -373,4 +373,8 @@ export const en: Translation = {
 	[Key.randomPosts]: "Random Posts",
 	[Key.smartRecommend]: "Smart",
 	[Key.randomRecommend]: "Random",
+
+	// Dashboard Page
+	[Key.dashboard]: "Dashboard",
+	[Key.dashboardSubtitle]: "Google Looker Studio Analytics Dashboard",
 };

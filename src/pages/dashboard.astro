@@ -1,0 +1,41 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { siteConfig } from "../config";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+
+export const prerender = true;
+
+// Check if dashboard page is enabled
+if (!siteConfig.featurePages.dashboard) {
+	return Astro.redirect("/404/");
+}
+
+const title = i18n(I18nKey.dashboard);
+const subtitle = i18n(I18nKey.dashboardSubtitle);
+---
+
+<MainGridLayout title={title}>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+	</script>
+	<div
+		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle={subtitle} />
+
+			<!-- Google Looker Studio Dashboard Embed -->
+			<div class="mt-6">
+				<iframe
+					src="https://lookerstudio.google.com/embed/reporting/a92f4650-168c-431c-ac80-37e4836eb526/page/p_ncx16zw10d"
+					frameborder="0"
+					style="border:0"
+					allowfullscreen
+					class="w-full h-[800px] rounded-lg"
+				></iframe>
+			</div>
+		</div>
+	</div>
+</MainGridLayout>
