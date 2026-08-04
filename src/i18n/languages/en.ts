@@ -376,5 +376,5 @@ export const en: Translation = {
 
 	// Dashboard Page
 	[Key.dashboard]: "Dashboard",
-	[Key.dashboardSubtitle]: "Google Looker Studio Analytics Dashboard",
+	[Key.dashboardSubtitle]: "Galeri24 Gold Price Dashboard",
 };

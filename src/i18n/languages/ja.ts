@@ -377,4 +377,8 @@ export const ja: Translation = {
 	[Key.randomPosts]: "ランダム記事",
 	[Key.smartRecommend]: "スマート",
 	[Key.randomRecommend]: "ランダム",
+
+	// Dashboard Page
+	[Key.dashboard]: "ダッシュボード",
+	[Key.dashboardSubtitle]: "Galeri24 Gold Price ダッシュボード",
 };

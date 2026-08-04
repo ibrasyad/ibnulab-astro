@@ -362,4 +362,8 @@ export const zh_TW: Translation = {
 	[Key.randomPosts]: "隨機文章",
 	[Key.smartRecommend]: "智能推薦",
 	[Key.randomRecommend]: "隨機推薦",
+
+	// Dashboard Page
+	[Key.dashboard]: "儀表板",
+	[Key.dashboardSubtitle]: "Galeri24 黃金價格儀表板",
 };

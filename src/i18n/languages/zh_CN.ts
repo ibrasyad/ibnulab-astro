@@ -360,4 +360,8 @@ export const zh_CN: Translation = {
 	[Key.randomPosts]: "随机文章",
 	[Key.smartRecommend]: "智能推荐",
 	[Key.randomRecommend]: "随机推荐",
+
+	// Dashboard Page
+	[Key.dashboard]: "仪表板",
+	[Key.dashboardSubtitle]: "Galeri24 黄金价格仪表板",
 };
